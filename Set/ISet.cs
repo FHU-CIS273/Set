@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Set
 {
     public interface ISet<T>
@@ -14,6 +16,9 @@ namespace Set
         bool Contains(T value);
 
         int Size { get; }
+
+        List<T> Elements { get; }
+
 
     }
 }
